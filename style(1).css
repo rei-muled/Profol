@@ -1,0 +1,61 @@
+* { text-decoration: none; margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Comic Sans MS', 'Comic Sans', cursive; }
+.wrapper { width: 1001px; margin: auto; position: relative; }
+
+/* Navbar */
+nav { width: 100%; line-height: 80px; position: sticky; position: -webkit-sticky; top: 0; background-color: aliceblue; z-index: 1; }
+nav .wrapper { display: flex; justify-content: space-between; align-items: center; }
+.logo a { font-size: 20px; font-weight: 800; color: #411ab7; }
+nav ul { list-style-type: none; overflow: hidden; }
+nav ul li { float: left; }
+nav ul li a { color: black; font-weight: bold; text-align: center; padding: 0 16px; }
+nav ul li a:hover { text-decoration: underline; }
+nav ul li a.tbl-one:hover { text-decoration: none; }
+
+/* Section */
+section { display: flex; align-items: center; scroll-margin-top: 80px; }
+.kolom { margin-top: 50px; margin-bottom: 0; }
+.kolom .deskripsi { font-size: 20px; font-weight: bold; color: #411ab7; }
+h2 { font-weight: 700; font-size: 45px; margin-bottom: 30px; color: #411ab7; width: 100%; line-height: 50px; }
+p { margin: 10px 0; padding: 10px 0; }
+.gambar { margin-top: 0; width: 470px; height: auto; }
+.gambar1 { margin-top: 0; width: auto; height: 400px; }
+#home .kolom { padding-left: 20px; }
+#online .kolom { padding-right: 20px; }
+
+/* Tombol */
+a.tbl-one, a.tbl-two { display: inline-block; background: #0BA6DF; border-radius: 20px; margin-top: 20px; padding: 10px 15px; color: aliceblue; cursor: pointer; font-weight: bold; line-height: normal; }
+a.tbl-two { padding: 10px 20px; margin-top: 0; }
+a.tbl-one:hover, a.tbl-two:hover { background: #FAA533; text-decoration: none; }
+
+/* Tutors & Partners */
+.tengah { text-align: center; width: 100%; margin-top: 50px; margin-bottom: 20px; }
+.tutor-list, .partner-list { width: 100%; position: relative; display: flex; flex-wrap: wrap; margin-bottom: 0; align-items: center; }
+.kartu-tutor { width: 20%; margin: 0 auto; }
+.kartu-tutor img { width: 80%; aspect-ratio: 4/5; object-fit: cover; border-radius: 50%; }
+.kartu-tutor p { font-weight: 800; font-size: 25px; text-align: center; color: #411ab7; }
+.kartu-partner { width: 20%; margin: 0 auto; }
+.kartu-partner img { width: 150px; border-radius: 50px; }
+
+/* Contact */
+.contact { background: #dedede; padding: 30px 0; }
+.footer { width: 100%; display: flex; flex-wrap: wrap; margin: auto; }
+.footer-section { width: 20%; margin: 0 auto; }
+h4 { font-weight: 800; font-size: 20px; margin-bottom: 0; color: #411ab7; width: 100%; line-height: 20px; }
+.footer-section p { font-size: 14px; }
+#copyright { text-align: center; width: 100%; padding: 30px 0; margin-top: 0; }
+
+/* Responsive */
+@media screen and (max-width: 991.98px) {
+    .wrapper { width: 90%; }
+    nav { line-height: 60px; }
+    nav .wrapper { display: block; }
+    .logo a { display: block; width: 100%; text-align: center; }
+    nav .menu { width: 100%; margin: 0; }
+    nav .menu ul { text-align: center; margin: auto; line-height: 60px; }
+    nav .menu ul li { display: inline-block; float: none; }
+    section { display: block; }
+    section img { display: block; width: 100%; height: auto; }
+    .kartu-partner, .kartu-tutor, .footer-section { width: 50%; }
+}
